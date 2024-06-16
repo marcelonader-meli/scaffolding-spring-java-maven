@@ -1,0 +1,5 @@
+services:
+  project_java:
+    build: .
+    volumes:
+      - .:/app
