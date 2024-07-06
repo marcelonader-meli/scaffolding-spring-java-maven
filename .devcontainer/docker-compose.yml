@@ -23,3 +23,11 @@ services:
 
     # Overrides default command so things don't shut down after the process ends.
     command: tail -f /dev/null
+
+  
+  postgres:
+    volumes:
+      - postgres_dev_db:/var/lib/postgresql/data
+
+volumes:
+  postgres_dev_db:
